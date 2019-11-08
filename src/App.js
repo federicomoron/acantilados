@@ -4,11 +4,7 @@ import './App.css';
 
 function App() {
   return (
-<<<<<<< HEAD
-    <div className="App">
-=======
     <div className="App"> 
->>>>>>> 7c0d2763865852d249e9f9aa419485cfaf3f8fb1
       
         <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <a className="navbar-brand" href="/">Menú</a>
