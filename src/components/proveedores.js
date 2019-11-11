@@ -1,20 +1,22 @@
 import React from 'react';
-import Menu from './components/barra';
+import Menu from './barra';
 
-function proveedores() {
-  return (
+
+function Fproveedores() {
+        
+ return (
     <div className="proveedores">
         <Menu /> 
-        <nav className = "navbar navbar-dark bg-dark">
-         <a href="" className ="text-white">
-             task
-         </a>
-         
+     <div className="notesContainer" ></div>
+        <div className="notesHeader" >
+            <h1>React y Firebase App</h1>
+        </div>
+    
+     <div className="notesFooter" >
 
-        </nav>
-  
-   
+     </div>
+     
     </div>
 );
 }
-export default proveedores;
+export default Fproveedores;

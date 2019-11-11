@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css';
 import Menu from './components/barra';
+import Fprovedores from './components/proveedores';
+
 
 
 function App() {
+
   return (
     <div className="App">
       <div className="container jumbotron ">
@@ -12,13 +15,13 @@ function App() {
           <Menu /> 
           <img src="logo_acantilado.png"  className="App-logo" alt="logo"></img>
         </div>
-            
-          <h1 className="display-3 ">Bienvenido a Los Acantilados!!!</h1>
-      <p>Cómo comienzas tu día es cómo vives tu día. Cómo vives tu día es cómo vives tu vida.</p>
-          </div>
+      
+        <Fprovedores/>
+
+        </div>
       </div>
     
-
+    
       <hr>
       </hr>
       <div className="container jumbotron">
