@@ -1,22 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Menu from './components/barra';
-import Fprovedores from './components/proveedores';
 
+class App extends Component {
+  renderHome = () => <h1>Home</h1>;
+  renderproveedores = () => <h1> Proveedores</h1>;
 
+  render(){
+    return (
+    
+      <div className="App">
+          <Router>
+        <div>
+          <Route extact path ="/" component={this.renderHome}/>
+          <Route extact path ="/proveedores" component={this.renderproveedores}/>
 
-function App() {
-
-  return (
-    <div className="App">
+        </div>
+      </Router>
       <div className="container jumbotron ">
         <div id="portal" className="container ">
         <div className="col-lg-8 text-center">
           <Menu /> 
           <img src="logo_acantilado.png"  className="App-logo" alt="logo"></img>
         </div>
-      
-        <Fprovedores/>
+  
 
         </div>
       </div>
@@ -61,7 +69,12 @@ function App() {
       </div>
        
     </div>
-  );
+
+
+    );
+  }
 }
+
+
 
 export default App;
