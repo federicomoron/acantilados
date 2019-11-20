@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import Menu from './barra';
 
 
@@ -20,3 +20,23 @@ function Fproveedores() {
 );
 }
 export default Fproveedores;
+*/
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const proveedores =( { name, cuil}) => {
+    return (
+        <div>
+            <h2>Formulario Proveedro></h2>
+            <h3>Nombre: {name} / Cuil: {cuil}</h3>
+        </div>
+            
+    );
+};
+
+proveedores.PropTypes = {
+    name: PropTypes.string,
+    cuil: PropTypes.string,
+};
+
+export default proveedores;
